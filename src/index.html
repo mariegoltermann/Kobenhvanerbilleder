@@ -9,24 +9,40 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Københavnerbilleder</title>
   </head>
+ <header>
+  <div class="flex justify-center items-center">
+    <div class="w-full">
+        <div>
+            <button id="darkmode" class="mt-2 px-3 py-2 bg-white-400 bg-black font-semibold text-gray-600 dark:bg-white">
+                Dark Mode on/off
+            </button>
+        </div>
+    </div>
+</div>
+ </header>
   <body class="grid place-items-center p-8 bg-[#CDCDCD]">
 
-    <section class="prose max-w-screen-md">
-    <h1 class="text-4xl font-bold text-Oswald-700 text-red-800 text-center pt-10">KØBENHAVNERBILLEDER - EN GUIDE TIL HIPSTER FOTO</h1>
-    <div class="gap-5 place-content-center">
-<img class="" src="Tegnebrat1.png" alt="01"> 
-<img class="md:w-50" src="kobenhavnerbilledeskraa.png" alt="open">
-</div>
-<h2 class="text-3xl font-bold text-Oswald-700 text-red-800 text-right">af Sten Simons</h2>  
-<button class="border-2 border-red-800 h-10 w-60">KØB NU</button>
+    <h1 class="text-4xl font-bold text-Oswald-700 text-red-800 text-center pt-10 dark:text-white">KØBENHAVNERBILLEDER - EN GUIDE TIL HIPSTER FOTO</h1>
+    <section class="grid grid-cols-6 prose max-w-screen-md mt-10">
+      <div class="cols-start-1 col-span-1">
+        <img src="Tegnebrat1.webp" alt="01"> 
+      </div>
+      <div class="cols-start-2 col-span-5">
+        <img class="md:w-50" src="sektion1.webp" alt="open">
+        <h2 class="text-3xl font-bold text-Oswald-700 text-red-800 text-right dark:text-white">af Sten Simons</h2> 
+        <p class="text-right">
+        <button class="border-2 border-red-800 dark:border-white h-10 w-60">KØB NU</button>
+      </p> 
+      </div>
 </section>
 
-<section class="prose max-w-screen-md pt-5">
+<section class="prose max-w-screen-md pt-5 ">
   <div class="flex-auto gap-5 place-content-center">
-<img class="" src="Tegnebrat2.png" alt="02">
-<img class="w-1/2" src="nikkormat-ft2-orestad-c-6 (3).jpg" alt="orstad">
+<img class="" src="Tegnebrat2.webp" alt="02">
 </div>
-<div>
+<div class="md:flex md:gap-5">
+<img class="w-1/2" src="nikkormat-ft2-orestad-c-6 (3).webp" alt="orstad">
+<div class="md:pt-5">
   <p class="text-Oswald-700 font-light">Københavnerbilleder er de danske streetfotografers bibel: Det er en fusion mellem et kunstværk og en lærebog. Bogen gennemgår alle væsentlige aspekter af streetfotografering fra grundlæggende teknik til kreative eksperimenter. Alt sammen krydret med masser af inspirerende fotos. God læselyst! </p>
   <ul class="list-none text-Oswald-700 font-light">
     <li><b>Titel:</b> Københavnerbilleder - en guide til hipster foto</li>
@@ -37,22 +53,28 @@
     <li><b>Pris:</b> 399.-</li>
   </ul>
 </div>
-</section>
-
-<section class="prose max-w-screen-md">
-  <div class="">
-    <img src="Tegnebrat3.png" alt="03">
- <div class="w-60 space-y-2">
-  <img class="border-2 border-red-800" src="kobenhavnerbilleder-sten-simons (1).jpg" alt="b1">
-  <img class="border-2 border-red-800" src="kobenhavnerbilleder_oppefra (1).jpg" alt="b2">
-  <img class="border-2 border-red-800" src="kobenhavnerbilledeskraa.png" alt="b3">
- <button class="border-2 border-red-800 h-10 w-60">KØB NU</button>
-</div>
 </div>
 </section>
 
+<section class="grid grid-cols-6 grid-rows-2 prose max-w-screen-md">
+  <div class="cols-start-1 col-span-1">
+    <img src="Tegnebrat3.webp" alt="03">
+  </div>
+<div class="col-start-1 row-start-2 row-span-full">
+ <div class="flex w-60 gap-3">
+  <img class="border-2 border-red-800" src="kobenhavnerbilleder-sten-simons (1).webp" alt="b1">
+  <img class="border-2 border-red-800" src="kobenhavnerbilleder_oppefra (1).webp" alt="b2">
+  <img class="border-2 border-red-800" src="kobenhavnerbilleder_aaben_venstre (1)-kopi.webp" alt="b3">
+</div>
+<p class="pb-3">
+<button class="border-2 border-red-800 h-10 w-60">KØB NU</button>
+</p>
+</div>
+</section>
+
+
 <section class="prose max-w-screen-md">
- <img src="Tegnebrat4.png" alt="04">
+ <img src="Tegnebrat4.webp" alt="04">
  <div class="text-center space-y-2">
   <div>
     <div class="flex place-content-center">
@@ -93,7 +115,7 @@
 </section>
 
 <section class="prose max-w-screen-md">
-  <img src="Tegnebrat5.png" alt="05">
+  <img src="Tegnebrat5.webp" alt="05">
   <div>
     <div>
     <h4>Kapitel 1 - Intro til street foto</h4>
@@ -105,7 +127,7 @@
     <p class="font-light">Vil du skyde street? Så er der ikke nogen vej udenom: Du skal ud på gaderne og prøve det! I dette kapitel får du en teknisk indføring i hvordan du bedst skyder street. Uanset om du er begynder eller professionel, er der mange gode tekniske tips og tricks til street-skyderiet.</p>
   </div>
 </div>
-
+<hr class="border-1 border-red-800">
 <div>
   <div>
   <h4>Kapitel 3 - Om at finde det rette motiv</h4>
@@ -117,7 +139,7 @@
   <p class="font-light">De fleste af os skyder oftest digitalt fordi det er billigere og nemmere. Og nogen teknikker og fremgangsmåder egner sig kun til digital street foto. I dette kapitel får du en række tips og tricks til digital street-foto. </p>
 </div>
 </div>
-
+<hr class="border-1 border-red-800">
 <div>
   <div>
   <h4>Kapitel 5 - Analog street foto</h4>
@@ -129,7 +151,7 @@
   <p class="font-light">Alle street-fotografer skyder sort/hvid nu og da. Nogen altid. Hvorfor? Hvad er der specielt ved sort/hvid fotografering, og hvad adskiller sort/hvid fra farvefotografering? Her får du en række tips og tricks til sort/hvid fotografering. </p>
 </div>
 </div>
-
+<hr class="border-1 border-red-800">
 <div>
   <div>
   <h4>Kapitel 7 - Kreative teknikker </h4>
@@ -144,28 +166,39 @@
 </section>
 
 <section class="prose max-w-screen-md">
-  <img src="Tegnebrat7.png" alt="07">
+  <img src="Tegnebrat6.webp" alt="07">
   <div class="md:grid grid-cols-3 gap-2">
-<img src="_6090016 (1).png" alt="galleri1">   
-<img src="agfa-genanvendeligt-kamera-35mm-film-2-5.png" alt="galleri2">
-<img src="kbh-by-night-3 (1).png" alt="galleri3">
-<img src="orestad-til-islands-brygge-pentax-auto-110-14.png" alt="galleri4">
-<img src="pinhole-objektiver-ved-eghjorten-3.png" alt="galleri5">
-<img src="agfa-genanvendeligt-kamera-35mm-5.png" alt="galleri6">
+<img src="_6090016 (1).webp" alt="galleri1">   
+<img src="agfa-genanvendeligt-kamera-35mm-film-2-5.webp" alt="galleri2">
+<img src="kbh-by-night-3 (1).webp" alt="galleri3">
+<img src="orestad-til-islands-brygge-pentax-auto-110-14.webp" alt="galleri4">
+<img src="pinhole-objektiver-ved-eghjorten-3.webp" alt="galleri5">
+<img src="agfa-genanvendeligt-kamera-35mm-5.webp" alt="galleri6">
   </div>
 </section>
 
 <section class="prose max-w-screen-md">
-  <img src="Tegnebrat6.png" alt="06">
-  <div>
-    <h2 class="text-red-800 font-bold">Sten hej Simons</h2>
+  <img src="Tegnebrat7.webp" alt="06">
+  <div class="flex gap-5">
+    <div>
+      <img class="pt-10" src="sten_simons (1).webp" alt="sten">
+    </div>
+    <div class="md:pt-5">
+    <h2 class="text-red-800 font-bold">Sten Simons</h2>
     <p class="font-light">Sten Simons har en lang foto-karriere bag sig. Det hele startede i 00’erne, da han gik rundt i Pisserenden for at fotografere ungdommens forfald. Det ledte til en række udstillinger, og blev senere til hans først fotobog “Ungdomsdruk - pinlige billeder fra nattelivet.”
       Derefter tog karrieren fart: Han blev fotojournalist og dokumenterede en masse dagligdagsstof fra Amager på dagbladet “Amagerkaneren.” Sideløbende begyndte han at undervise i foto, og har skrevet et utal af bøger, herunder bestsellerne Scener fra S-toget, Brun mad - en visuel odysse, og lærebogen Fotografering for evnesvage.</p>
-    <img class="w-60 pt-10" src="sten_simons (1).jpg" alt="sten">
+    </div>
   </div>
 </section>
 
     <script type="module" src="./main.js"></script>
+    <script>
+      const darkmodeknap = document.querySelector("#darkmode");
+darkmodeknap.addEventListener("click",function(){
+    console.log
+    document.documentElement.classList.toggle("dark"); 
+}) 
+    </script>
   </body>
 </html>
 
